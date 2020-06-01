@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Name: VuforiaConfiguration
+  m_EditorClassIdentifier: 
+  vuforia:
+    vuforiaLicenseKey: Ae8BQ7T/////AAABmXkO2k48zEvMsY/uXTxbUHR24DdKILA9BN0qFn9rEYyqf+YQ0ZRztSo1F/+QbTsjYoDD4PciYnew1oeye6auFe2kv2M0cXtO0k6enAqW6qkoUVLo8W2xSO2dvM75i0d/2UriDVScf5YDlgvnkXi6zK6ALnyV3xASlwGp59mq7dfHxe6FcV6uTYqiKQt6clHHki0LIR30NI37DKFrIFoOKS+LnETZgXvchwubSOcv1EJLwwLhhFy/hlUqgiu/KYnKMm+ZNwMva3yuyDI+Gi4aKFIvBv+e6ddAHw1EzPt4T/J+ZlXyjcnDrHX6TtC11C+lS/VdmpugYTkMIP/3tO7nhUn4Xxby1K3yMgXZT6fWZ/iK
+    ufoLicenseKey: QWRtOFU1My8vLy8vQUFBQUtKR2tVYTBPS2t5b3J3NnZCL2pZZlBnYVNJRUJ0UVlwL08rYTM3RDFpWkVta3A1cFRKanhld2pTcW9NZHhEVXZwRG9TMnN6V0hQU2tHdDcwdjAxRUR4R0VnL1F3TGl5enBHU202V2JKYVpYZkdDY2s4N3N0cjd1V2hjVVo4MU55TUhVdEVqZWhOOGlRdjk1ZkI3TWtBZUFNZEV3TnJZVGt1Q2pGQnZWb0pSNSsrd3BGMm0weFJXVWZTS2JxT2lTc2tQU0ZPZlR1eWdNSzNOeUYvYytneXR2UjVjejVkSGxkRk05SkFkME5PdjIvSmVMeGlZZkVZR1h1UHRURWFDSm5qUmtPbDM1RVc4bVptSFIvcU9KdHA5R2RPRU4wZS81ZVVLTXZyRzJtY0dsaWdVemw1eE94YWEyL3loVVFlQmFOMVgzcmptUFVmVjdLcVJzQS9PbTBRRmlVZ2VONGNmUU40SmNTL0FyTUhhRUk=
+    delayedInitialization: 0
+    cameraDeviceModeSetting: -1
+    maxSimultaneousImageTargets: 1
+    maxSimultaneousObjectTargets: 1
+    virtualSceneScaleFactor: 1
+    useDelayedLoadingObjectTargets: 0
+    modelTargetRecoWhileExtendedTracked: 1
+    version: 9.1.7
+    eulaAcceptedVersions: 
+    modelTargetMode: 0
+  database:
+    disableModelExtraction: 0
+  videoBackground:
+    numDivisions: 2
+    videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
+      type: 3}
+    videoBackgroundEnabled: 1
+  deviceTracker:
+    autoStartTracker: 0
+    arcoreRequirement: 1
+    autoImportArcore: 1
+  playmode:
+    playModeType: 0
+  webcam:
+    renderTextureLayer: 30
