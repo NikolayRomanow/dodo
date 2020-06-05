@@ -11,23 +11,22 @@ public class Timer : MonoBehaviour
     public Text text;
     public float TimeLeft;
     private float TimeYes;
-    public Transform Bird;
     public Transform PointEnd;
     private int _count = 0;
 
     private void Update()
     {
         TimeLeft += Time.deltaTime;
-        if (Bird.position == PointEnd.position && _count == 0)
+        if (this.transform.position == PointEnd.position && _count == 0)
         {
             TimeYes = TimeLeft;
             _count++;
         }
-        if (Bird.position == PointEnd.position)
+        if (this.transform.position == PointEnd.position)
         {
             Panel.SetActive(true);
             PunelOff.SetActive(false);
-            text.text = "Ваше время: " + Convert.ToString(TimeYes);
+            text.text = "Ваше время: " + Convert.ToString(TimeYes).Remove(6) + " сек.";
         }
         
     }
