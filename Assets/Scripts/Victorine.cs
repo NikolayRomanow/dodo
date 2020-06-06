@@ -11,19 +11,46 @@ public class Victorine : MonoBehaviour
     public QuestionList[] Questions;
     public Text[] AnswersText;
     public Text qText;
-    public GameObject BirdScriptMoving;
-    
+    public Transform endPosition;
+
+    public GameObject victorinePanel;
+    public GameObject ratingPanel;
+
+    public GameObject Bird1;
+    public GameObject Bird2;
+
+    public GameObject game;
+
+    private float time;
+
+    public Text timeCount;
+    public Text trueAnswers;
+    public Text countAnswers;
 
     private List<object> qList;
     private QuestionList crntQ;
     private int randQ;
-    private AIMove ScriptMoving;
 
     private int Rele = 0;
+    private bool lampochka = false;
 
-    public void Awake()
+    public int _trueAnswers;
+    public int _countAnswers;
+
+    public void Update()
     {
-        ScriptMoving = BirdScriptMoving.GetComponent<AIMove>();
+        if(!game.activeSelf)
+            return;
+        time += Time.deltaTime;
+        if (Bird1.transform.position == endPosition.position && !lampochka)
+        {
+            lampochka = true;
+            timeCount.text = Convert.ToString(time).Remove(6) + "сек.";
+            trueAnswers.text = Convert.ToString(_trueAnswers);
+            countAnswers.text = Convert.ToString(_countAnswers);
+            victorinePanel.SetActive(false);
+            ratingPanel.SetActive(true);
+        }
     }
 
     public void OnClickPlay()
@@ -55,17 +82,19 @@ public class Victorine : MonoBehaviour
     {
         if (AnswersText[index].text.ToString() == crntQ.Answer[0])
         {
-            Debug.Log("+1");
-            ScriptMoving.SpeedMove += 0.05f;
-            ScriptMoving.SpeedRotate += 5f;
+            _trueAnswers++;
         }
-
         else
         {
-            Debug.Log("-1");
-            ScriptMoving.SpeedMove -= 0.05f;
-            ScriptMoving.SpeedRotate -= 5f;
+            _countAnswers++;
         }
+        _countAnswers++;
+        StartCoroutine(KostylNomer2534());
+    }
+
+    IEnumerator KostylNomer2534()
+    {
+        yield return new WaitForSeconds(0.5f);
         qList.RemoveAt(randQ);
         _questionGenerate();
     }
@@ -78,6 +107,8 @@ public class QuestionList
     public string Question;
     public string[] Answer = new string[3];
 }
+
+
 
 
 
