@@ -2072,34 +2072,6 @@ Transform:
   m_Father: {fileID: 363695191}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &222543522
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'ARmarkerFullMaterial
-
-    15276'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f222dff7fe884ca2b236cad1036a1368, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &223205124
 GameObject:
   m_ObjectHideFlags: 0
@@ -9419,7 +9391,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 222543522}
+  - {fileID: 1268697832}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11579,9 +11551,9 @@ MonoBehaviour:
       \"\u043F\u0438\u0446\u0446\u0430\" \u0443\u043F\u043E\u043C\u0438\u043D\u0430\u043B\u043E\u0441\u044C
       \u0432 ..."
     Answer:
-    - "\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u043E\u043C \u044F\u0437\u044B\u043A\u0435"
-    - "\u0413\u0440\u0435\u0447\u0435\u0441\u043A\u043E\u043C \u044F\u0437\u044B\u043A\u0435"
     - "\u0418\u0442\u0430\u043B\u044C\u044F\u043D\u0441\u043A\u043E\u043C \u044F\u0437\u044B\u043A\u0435"
+    - "\u0413\u0440\u0435\u0447\u0435\u0441\u043A\u043E\u043C \u044F\u0437\u044B\u043A\u0435"
+    - "\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u043E\u043C \u044F\u0437\u044B\u043A\u0435"
   AnswersText:
   - {fileID: 1736019341}
   - {fileID: 1386774925}
@@ -12062,6 +12034,34 @@ Transform:
   m_Father: {fileID: 1136335961}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1268697832
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'ARmarkerFullMaterial
+
+    14872'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f222dff7fe884ca2b236cad1036a1368, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1270147584
 GameObject:
   m_ObjectHideFlags: 0

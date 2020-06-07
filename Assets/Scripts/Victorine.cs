@@ -86,7 +86,6 @@ public class Victorine : MonoBehaviour
         }
         else
         {
-            _countAnswers++;
         }
         _countAnswers++;
         StartCoroutine(KostylNomer2534());
